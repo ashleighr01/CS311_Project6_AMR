@@ -1,0 +1,64 @@
+#container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+#Header {
+    font-weight: bolder;
+    background-color: maroon;
+    color: ghostwhite;
+    margin-bottom: 5px;
+    padding: 5px;
+    display: flex; 
+}
+
+#body {
+    background-color: goldenrod;
+    display: grid;
+    grid-template-columns: [col-start] auto [col1] auto [col2] auto [col3] auto [col-end];
+    grid-template-rows: [row-start] auto [row2] auto [row3] auto [row-end];
+    padding: 5px;
+}
+
+#Assets {
+    grid-column-start: col-start;
+    grid-column-end: col1;
+}
+
+#cAssetButt, #investButt, #intangibleButt {
+    grid-column-start: col1;
+    grid-column-end:  col2;
+    text-align: center;
+}
+
+#Liabilities {
+    grid-column-start: col1;
+    grid-column-end: col-end;
+}
+
+#cLiabilityButt, #lLiabilityButt {
+    grid-column-start: col2;
+    grid-column-end:  col-end;
+    text-align: center;
+
+}
+
+#Positions {
+    grid-column-start: col1;
+    grid-column-end: span col-end;
+}
+
+h1 {
+    background-color: black;
+    color: ghostwhite;
+    font-weight: bolder;
+}
+
+#Footer {
+    font-style: italic;
+    background-color: maroon;
+    color: ghostwhite;
+    margin-top: 5px;
+    padding: 5px;
+    display: flex;
+}
